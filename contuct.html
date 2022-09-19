@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font_awesome/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <title>Contuct Us</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/Group 3.svg" alt="">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search Now"><button class="s-bt">Search</button>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li class="posi-tion"><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contuct.html">Contuct</a></li>
+                    <li><a class="active" href="account.html">Account</a></li>
+                    <li><a href="cart.html"><img  src="img/cart.png" width="30px" height="30px"></a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+
+<!-- Account Page-->
+
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and iso mobile phone</p>
+                <div class="app-logo">
+                    <img src="img/play-store.png" alt="">
+                    <img src="img/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/foot-i.svg" alt="">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and 
+                Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Usefull Links</h3>
+                <ul>
+                    <li>Couponse</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instragram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright &copy; Jubayed Sultan - Html CSS E-commerce Web Template in/2022</p>
+    </div>
+
+     <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight =="0px"){
+                MenuItems.style.maxHeight = "200px"
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+     </script>
+
+     <!--Js For Togol Form-->
+     <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var ReegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+        function register(){
+            ReegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            ReegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+
+     </script>
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
